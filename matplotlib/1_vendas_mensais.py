@@ -2,7 +2,6 @@ import matplotlib.pylab as plt
 
 # Crie um gráfico de linha usando o Matplotlib que:
 
-
 meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun"]
 vendas = [1500, 1800, 1700, 2000, 2200, 2100]
 
