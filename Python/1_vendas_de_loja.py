@@ -32,7 +32,8 @@ my_dict = {a['cliente']:a['valor'] for a in pedidos}
 print(my_dict)
 
 # Descubra qual cliente gastou mais no total.
-
+for x,y in zip(my_dict):
+    print(x)
 
 
 
