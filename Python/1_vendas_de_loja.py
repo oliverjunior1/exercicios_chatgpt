@@ -32,15 +32,7 @@ my_dict = {a['cliente']:a['valor'] for a in pedidos}
 print(my_dict)
 
 # Descubra qual cliente gastou mais no total.
-i = 0
-j = 0
-while i > 0:
-    while j>0:
-        my_list = my_dict[i][j]
-        j += 1
-    i += 1
 
-print(my_list)
 
 
 
