@@ -14,3 +14,6 @@ while i<len(pedidos):
     i+= 1
 print(sum)
 
+# Use filter + lambda para retornar apenas pedidos com valor maior que 100.
+# maior_que_100 = filter(lambda pe)
+
