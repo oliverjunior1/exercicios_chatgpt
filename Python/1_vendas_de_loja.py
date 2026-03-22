@@ -15,5 +15,24 @@ while i<len(pedidos):
 print(sum)
 
 # Use filter + lambda para retornar apenas pedidos com valor maior que 100.
-# maior_que_100 = filter(lambda pe)
+pedidos_acima_100 = list(filter(lambda p: p["valor"] > 100, pedidos))
+
+print(pedidos_acima_100)
+
+# Use map para criar uma lista contendo apenas os valores dos pedidos.
+valores_dos_pedidos = list(map(lambda a: a['valor'],pedidos))
+print(valores_dos_pedidos)
+
+# Crie um dicionário no formato:{
+#     "Ana": 170.0,
+#     "Bruno": 380.0,
+#     "Carlos": 200.0
+# }
+my_dict = {a['cliente']:a['valor'] for a in pedidos}
+print(my_dict)
+
+# Descubra qual cliente gastou mais no total.
+
+
+
 
