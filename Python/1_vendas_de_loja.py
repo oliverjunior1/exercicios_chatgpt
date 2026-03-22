@@ -32,8 +32,18 @@ my_dict = {a['cliente']:a['valor'] for a in pedidos}
 print(my_dict)
 
 # Descubra qual cliente gastou mais no total.
-for x,y in zip(my_dict):
-    print(x)
+gastos = {}
 
+for p in pedidos:
+    cliente = p["cliente"]
+    valor = p["valor"]
 
+    if cliente in gastos:
+        gastos[cliente] += valor
+    else:
+        gastos[cliente] = valor
+
+cliente_top = max(gastos, key=gastos.get)
+
+print(cliente_top, gastos[cliente_top])
 
